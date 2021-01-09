@@ -1,3 +1,15 @@
+@media(max-width: 1240px) {
+.team__item-4{
+    left: 275px;
+}
+}
+
+@media(max-width: 1040px) {
+    .team__item-5 {
+    bottom: 100px;
+    }
+}
+
 @media(max-width: 992px) {
     .header__inner {
         flex-wrap: wrap;
@@ -14,27 +26,56 @@
         justify-content: flex-end;
         padding-top: 30px;
     }
-    .top__inner{
+
+    .top__inner {
         background-image: none;
     }
-    .tools__items{
+
+    .tools__items {
         flex-wrap: wrap;
     }
-    .tools__item{
+
+    .tools__item {
         width: 50%;
         margin-bottom: 30px;
         padding-right: 10px;
     }
+
+    .direction__item-img {
+        width: 40%;
+    }
+}
+
+@media(max-width: 860px) {
+    .direction__item-img {
+        width: 80%;
+        margin: 0 auto 30px;
+        order: -1;
+    }
+    .direction__item {
+        flex-wrap: wrap;
+    }
+    .direction__item-content{
+        max-width: 100%;
+    }
+    .team__item{
+        display: none;
+    }
+    .team__inner{
+        padding: 80px 0;
+    }
+
 }
 
 @media(max-width: 768px) {
-.top__inner{
-    padding: 80px 0 60px;    
-}
-.tools{
-    padding-top: 80px;
-    padding-bottom: 60px; 
-}
+    .top__inner {
+        padding: 80px 0 60px;
+    }
+
+    .tools {
+        padding-top: 80px;
+        padding-bottom: 60px;
+    }
 }
 
 @media(max-width: 524px) {
@@ -50,19 +91,20 @@
         left: 0;
         right: 0;
         background-color: #fff;
-        text-align: center;  
+        text-align: center;
         transition: all 1s;
         transform: translateY(-300%);
     }
-    .menu__list.menu__list--active{
+
+    .menu__list.menu__list--active {
         transition: all 1s;
-        transform: translateY(0%);        
+        transform: translateY(0%);
     }
 
-    .menu__list-link{
+    .menu__list-link {
         display: block;
         padding: 10px 0;
-        
+
     }
 
     .menu__btn {
@@ -71,29 +113,38 @@
         right: 10px;
         top: 25px;
     }
-    .user-nav{
+
+    .user-nav {
         margin-left: 0;
         margin-right: 0;
         text-align: center;
         padding-top: 30px;
     }
-    .menu__list-item+.menu__list-item{
-        margin-left: 0;        
+
+    .menu__list-item+.menu__list-item {
+        margin-left: 0;
     }
 
-    .top_title{
-    font-size: 28px;
-    line-height: 32;    
+    .top_title {
+        font-size: 28px;
+        line-height: 32;
     }
 
-    .top__btn{
+    .top__btn {
         margin-bottom: 25px;
     }
-    .tools__item{
+
+    .tools__item {
         width: 100px;
     }
-    .tools__title{
+
+    .tools__title,
+    .direction__item-title,
+    .team__title {
         font-size: 24px;
         line-height: 30px;
+    }
+    .direction__item{
+        margin-bottom: 40px;
     }
 }
