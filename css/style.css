@@ -287,28 +287,32 @@ button {
 .team__item {
     position: absolute;
     width: 98px;
-    height: 98px;    
+    height: 98px;
 }
 
-.team__item-1{
-top: 157px;
-right: 95px;
+.team__item-1 {
+    top: 157px;
+    right: 95px;
 }
+
 .team__item-2 {
     top: 223px;
     left: 0;
 }
+
 .team__item-3 {
     bottom: 257px;
     right: 0;
 }
+
 .team__item-4 {
     bottom: 223px;
     left: 210px;
 }
+
 .team__item-5 {
     bottom: 135px;
-    right: 300px;    
+    right: 300px;
 }
 
 .team__item-img {
@@ -329,10 +333,11 @@ right: 95px;
     right: 75px;
     white-space: nowrap;
 }
-.team__item-text.team__item-text-left{
-top: -41px;
-right: auto;
-left: 62px;
+
+.team__item-text.team__item-text-left {
+    top: -41px;
+    right: auto;
+    left: 62px;
 }
 
 
@@ -340,7 +345,7 @@ left: 62px;
 .team__item-text-right::before,
 .team__item-text-left::after,
 .team__item-text-left::before {
-    content:"O";
+    content: "O";
     position: absolute;
     color: #fff;
     border-radius: 50%;
@@ -362,36 +367,39 @@ left: 62px;
     right: 9px;
 }
 
-.team__item-text-left::after{
-left: 9px;
-right: auto;
+.team__item-text-left::after {
+    left: 9px;
+    right: auto;
 }
-.team__item-text-left::before{
- left: 30px;   
- right: auto;
+
+.team__item-text-left::before {
+    left: 30px;
+    right: auto;
 }
-.blog{
+
+.blog {
     padding: 30px 0 120px;
 }
-.blog__title{
-font-size: 34px;
-line-height: 51px;
-font-weight: 700;
+
+.blog__title {
+    font-size: 34px;
+    line-height: 51px;
+    font-weight: 700;
 }
 
-.blog__text{
-margin-bottom: 55px;
+.blog__text {
+    margin-bottom: 55px;
 }
 
-.slider{
+.slider {
     margin: 0 -20px;
 }
 
-.slider__item{
+.slider__item {
     padding: 0 20px;
 }
 
-.slider__item-img{
+.slider__item-img {
     width: 348px;
     height: 185px;
     object-fit: cover;
@@ -399,17 +407,19 @@ margin-bottom: 55px;
     border-top-right-radius: 8px;
     margin-bottom: 25px;
 }
-.slider__item-info{
+
+.slider__item-info {
     margin-bottom: 12px;
     line-height: 28px;
 }
 
-.slider__item-author{
+.slider__item-author {
     text-decoration: none;
     font-weight: 700;
     color: #544837;
 }
-.slider__item-title{
+
+.slider__item-title {
     text-decoration: none;
     color: #2F281E;
     font-height: 34px;
@@ -420,28 +430,119 @@ margin-bottom: 55px;
     display: inline-block;
 }
 
-.slider__item-title:hover{
+.slider__item-title:hover {
     color: #FF9900;
 }
 
-.slick-dots{
+.slick-dots {
     list-style: none;
     display: flex;
     justify-content: center;
 }
 
-.slick-dots button{
-height: 16px;
-width: 16px;
-border-radius: 50%;
-border: 0;
-font-size: 0;
-background-color: #EFEFEF;
-padding: 0;
-margin: 0 5px ;
+.slick-dots button {
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    border: 0;
+    font-size: 0;
+    background-color: #EFEFEF;
+    padding: 0;
+    margin: 0 5px;
 }
 
-.slick-dots .slick-active button{
+.slick-dots .slick-active button {
     background-color: #FF9900;
 }
 
+.footer__inner {
+    padding: 105px 0 100px;
+    border-top: solid 1px rgba(188, 208, 229, 0.496913);
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__menu {
+    width: 135px;
+}
+
+.footer__menu-title,
+.footer__form-text {
+    margin-bottom: 35px;
+    font-size: 20px;
+    line-height: 30px;
+    color: #2f281e;
+}
+
+.footer__list {
+    list-style: none;
+}
+
+.footer__menu-link {
+    font-size: 16px;
+    line-height: 35px;
+    color: #544837;
+    text-decoration: none;
+}
+
+.footer__form {
+    width: 330px;
+}
+
+.footer__form-input {
+    height: 48px;
+    padding: 0 15px;
+    border: 1px solid #BCD0E5;
+    border-radius: 4px;
+    width: 100%;
+    margin-bottom: 21px;
+    display: inline-block;
+}
+
+.footer__form-input::placeholder {
+    color: #bcd0e5;
+    font-size: 16px;
+    line-height: 28px;
+}
+
+.footer__form-btn {
+    background-color: #FF9900;
+    color: #fff;
+    border-radius: 4px;
+    padding: 8px 15px 7px;
+    border: none;
+}
+
+.menu__btn {
+    width: 40px;
+    height: 30px;    
+    display: none;    
+}
+
+.menu__btn span {
+    display: block;
+    height: 2px;
+    width: 100%;
+    background-color: #000;
+    position: absolute;
+    left: 0;
+    top: 14px;
+}
+
+.menu__btn::after,
+.menu__btn::before {
+    content: "";
+    position: absolute;
+    width: 40px;
+    height: 2px;
+    background-color: #000;
+    left: 0;
+}
+
+.menu__btn::before {
+    top: 0;
+}
+
+.menu__btn::after {
+    bottom: 0;
+}
